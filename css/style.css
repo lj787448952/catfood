@@ -1,0 +1,104 @@
+a,a:active, a:hover,a:visited,a:link{
+    text-decoration: none;
+    outline: none;
+}
+img{
+    max-width: 100%;
+}
+.mycard {
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+}
+.mycard:hover{
+    transform:scale(1.01);
+    box-shadow: 2px 8px 10px #00E9BB;
+}
+.mycards {
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+}
+.mycards:hover{
+    transform:scale(1.01);
+    box-shadow: 2px 8px 10px #50c878;
+}
+.footer-menu li{
+    list-style: none;
+}
+.footer-menu a{
+    text-decoration: none;
+}
+
+td{
+    color: #616161;
+}
+th{
+    color: #6e6d6d;
+}
+.welfareItems p{
+    margin-right: 16px;
+    background-color: rgb(119, 116, 116);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+.remove{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #87d899;
+
+}
+
+.text-green{
+    color: #50c878;
+}
+.border-radius{
+    border-radius: 30px;
+}
+.border-radius-bottom{
+    border-radius: 0 0 30px 30px;
+}
+.bg-GW{
+    background-image: linear-gradient( 75deg, #ffc107 ,#50c878);
+}
+.bg-WG{
+    background-image: linear-gradient( 75deg,  #50c878,#ffc107);
+}
+.bg-greenD{
+    background-color: #02735E;
+}
+.light_green{
+    background-color: #00e8bc;
+}
+.dark_green{
+    background-color: #02735E;
+}
+.dark_black{
+    background-color:#252a2c;
+}
+.word{
+    color: rgb(247, 247, 247);
+}
+.word-a{
+    color: #ffffff;
+}
+.word-a:hover{
+    color: #ffffff;
+    background-color: #00E8BC;
+}
+.more-a{
+    color: #00e8bc;
+}
+.more-a:hover{
+    color: #003027;
+}
+.ml{
+    margin-left: 10px;
+}
+.background-gd{
+    background: #004639;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #02866e, #004639);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #02866e, #004639); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}

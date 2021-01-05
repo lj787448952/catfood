@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body class="background-gd">
+  <!-- header -->
+  <div class="container-fluid px-0">
+    <div class="container-fluid dark_black">
+      <nav class="container navbar navbar-expand-md navbar-dark">
+        <a class="navbar-brand" href="index.html"><img src="./img/logo-cat-lightgreen.png" width="50%"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">關於公司</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shop.html">商品商城</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">聯絡我們</a>
+            </li>
+          </ul>
+          <div class="ml-auto d-flex justify-content-center align-items-center">
+            <a href="login.html" class="btn ml btn-outline-success text-white ml">登入</a>
+            <a href="cart.html" class="btn ml btn-outline-success text-white ml">購物車</a>
+            <a href="checkout.html" class="btn ml btn-outline-success text-white ml">結帳</a>
+          </div>
+        </div>
+
+      </nav>
+    </div>
+
+    <!-- 輪播 -->
+    <div class="container-fluid px-0">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/banner pic png_/brown_coffee.png" />
+            <div class="carousel-caption text-warning ">
+
+              <h3>Meow</h3>
+              <p>TEA?COFFEE?</p>
+
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="/img/banner pic png_/glur_green.png" />
+            <div class="carousel-caption text-white">
+              <h3><b>Green Gem</b></h3>
+              <h3><b>Am I CUTE?</b></h3>
+            </div>
+          </div>
+          <div class="carousel-item text-warning">
+            <img src="/img/banner pic png_/long_time_break.png" />
+            <div class="carousel-caption">
+              <h3>Lazy</h3>
+              <p>I NEED FOOD!</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-sm-4" data-aos="zoom-in-up">
+          <p class="text-left text-white"><strong>飼料區</strong></p><br>
+          <a href="#miao" data-toggle="collapse">
+            <img src="./img/cat-head-whatareyoutalking.png" class="img-circle person" alt="Random Name" width="255"
+              height="255">
+          </a>
+          <div id="miao" class="collapse text-center text-white">
+            <p>寵愛貓咪皇家飼料</p>
+            <p>品質保證</p>
+          </div>
+        </div>
+        <div class="col-sm-4" data-aos="zoom-in-up">
+          <p class="text-left text-white"><strong>逗貓區</strong></p><br>
+          <a href="#miao2" data-toggle="collapse">
+            <img src="./img/cat-head-saysomething.png" class="img-circle person" alt="Random Name" width="255"
+              height="255">
+          </a>
+          <div id="miao2" class="collapse text-center text-white">
+            <p>貓奴必備</p>
+            <p>舒心逗貓</p>
+          </div>
+        </div>
+        <div class="col-sm-4" data-aos="zoom-in-up">
+          <p class="text-left text-white"><strong>日常區</strong></p><br>
+          <a href="#miao3" data-toggle="collapse">
+            <img src="./img/cat-head_toldyoubf.png" class="img-circle person" alt="Random Name" width="255"
+              height="255">
+          </a>
+          <div id="miao3" class="collapse text-center text-white">
+            <p>日常配備</p>
+            <p>記得準備</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- product -->
+    <section class="container mt-5">
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <h2 class=" text-center text-white"><b>貓奴裝備區</b></h2>
+        </div>
+      </div>
+      <!-- 格式 -->
+      <div class="row mt-3">
+        <div class="col-md-3" data-aos="zoom-in-right">
+          <!-- 卡片 -->
+          <div class="card mycard border-radius">
+            <a href="#">
+              <img class="card-img-top" src="img/productaion png/Cat＿teaser＿wand.png" style="width:100%">
+              <div class="card-body light_green border-radius-bottom">
+                <h4 class="card-title text-white text-center ">蛇貓棒</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in-right">
+          <!-- 卡片 -->
+          <div class="card mycard border-radius">
+            <a href="#">
+              <img class="card-img-top" src="img/productaion png/Cat＿teaser＿wand＿second.png" style="width:100%">
+              <div class="card-body  border-radius-bottom light_green">
+                <h4 class="card-title text-white text-center">釣貓棒</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in-left">
+          <!-- 卡片 -->
+          <div class="card mycard border-radius">
+            <a href="#">
+              <img class="card-img-top" src="img/productaion png/Grooming＿brush.png" style="width:100%">
+              <div class="card-body light_green border-radius-bottom">
+                <h4 class="card-title text-white text-center">刮毛貓梳</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-in-left">
+          <!-- 卡片 -->
+          <div class="card mycard border-radius">
+            <a href="#">
+              <img class="card-img-top" src="img/productaion png/Scratcher.png" style="width:100%">
+              <div class="card-body light_green border-radius-bottom">
+                <h4 class="card-title text-white text-center">帆船抓板</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- HOTproduct -->
+    <section class="container">
+      <div class="row mt-5">
+        <div class="col-md-12">
+          <h2 class="text-center text-white"><b>熱門商品</b></h2>
+        </div>
+      </div>
+      <!-- 格式 -->
+      <div class="row mt-3">
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/cat_can.png" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">ai-01皇家貓罐罐</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;800</del></small>NT$&nbsp;600
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-01"
+                data-price="600">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Cat_litter_box.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-02白雪貓沙床</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;2000</del></small>NT$&nbsp;1500
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-02"
+                data-price="1500">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Cat_tree.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-03舒心貓樹</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;2600</del></small>NT$&nbsp;1500
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-03"
+                data-price="1500">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Cat＿teaser＿wand.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-04蛇貓棒</h4>
+              <h4 class="card-text text-danger"><b>熱門蛇貓棒</b></h4>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;1100</del></small>NT$&nbsp;800
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-04"
+                data-price="800">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Cat＿teaser＿wand＿second.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-05釣貓棒</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;600</del></small>NT$&nbsp;500
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-05"
+                data-price="500">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Grooming＿brush.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-06刮毛貓梳</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;800</del></small>NT$&nbsp;400
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-06"
+                data-price="400">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Grooming＿brushpng.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-07進階貓梳</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;1000</del></small>NT$&nbsp;500
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-07"
+                data-price="500">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-3" data-aos="zoom-out-down">
+          <!-- 卡片 -->
+          <div class="card mycard mycards">
+
+            <img class="card-img-top" src="img/productaion png/Scratcher.png" style="width:100%">
+
+            <div class="card-body">
+              <h4 class="card-title">ai-08帆船抓板</h4>
+              <p class="card-text">寵愛貓主品牌</p>
+              <h5 class="text-danger">
+                <small class="text-secondary mr-2"><del>NT$&nbsp;1800</del></small>NT$&nbsp;1300
+              </h5>
+              <a href="checkProduct.html" class="btn btn-primary btn-block">查看商品</a>
+              <button class="btn btn-outline-primary btn-block mycart-btn" data-title="ai-08"
+                data-price="1300">加入購物車</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about company -->
+    <div class="container-fluid mt-5">
+      <section class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="text-white"><span class="text-green">LOYA</span>寵貓皇室<span class="text-warning">LIST</span></h2>
+            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti adipisci sit at
+              itaque, magnam
+              suscipit repellat ratione placeat dolore necessitatibus, veniam quia voluptates unde dolorem harum,
+              officia ipsum error? Asperiores?</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- map -->
+    <section class="container">
+      <div class="px-0 mx-0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14460.047012906507!2d121.5561283697754!3d25.03367519999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442abb6e9d93249%3A0xd508f7b3aa02d931!2z5Y-w5YyXMTAx6KeA5pmv5Y-w!5e0!3m2!1szh-TW!2stw!4v1609210217527!5m2!1szh-TW!2stw"
+          width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe>
+      </div>
+    </section>
+
+
+    <!-- about coffeeshop -->
+    <div class="container my-5">
+      <div class="row" data-aos="fade-right">
+        <div class="col-md-8 d-flex align-items-center">
+          <img class="w-100 img-fluid" src="./img/coffeeshop-1.png" alt="">
+        </div>
+        <div class="col-md-4 my-3 my-md-0 word">
+          <h2>企業簡介</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur iusto aut
+            eius
+            fuga? Quidem similique dolore ex adipisci quae nostrum veniam esse. Beatae debitis placeat
+            vero
+            maiores recusandae eum.</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row" data-aos="fade-left">
+
+        <div class="col-md-4 my-3 my-md-0 word">
+          <h2>企業簡介</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur iusto aut
+            eius
+            fuga? Quidem similique dolore ex adipisci quae nostrum veniam esse. Beatae debitis placeat
+            vero
+            maiores recusandae eum.</p>
+
+        </div>
+        <div class="col-md-8 d-flex align-items-center">
+          <img class="w-100 img-fluid" src="./img/jack-coffeeshop-3.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="container my-5">
+      <div class="row" data-aos="fade-right">
+        <div class="col-md-8 d-flex align-items-center">
+          <img class="w-100 img-fluid" src="./img/jack-coffeeshop-2.png" alt="">
+        </div>
+        <div class="col-md-4 my-3 my-md-0 word">
+          <h2>企業簡介</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur iusto aut
+            eius
+            fuga? Quidem similique dolore ex adipisci quae nostrum veniam esse. Beatae debitis placeat
+            vero
+            maiores recusandae eum.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div class="container-fluid dark_black mt-5">
+      <footer class="container px-0">
+        <div class="row text-white">
+          <div class="col-md-6 d-flex align-items-center justify-content-center">
+            <ul class="footer-menu d-flex p-0 m-0">
+              <li class="mr-4"><a class="text-white active" href="index.html">首頁</a></li>
+              <li class="mr-4"><a class="text-white" href="about.html">關於公司</a></li>
+              <li class="mr-4"><a class="text-white" href="shop.html">商品商城</a></li>
+              <li class="mr-4"><a class="text-white" href="contact.html">聯絡我們</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <div class="px-0 mt-3">
+              <h3 class="text-center">請留下Email，方便我們連繫尊貴的您</h3>
+              <form action="">
+                <div class="form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <button type="submit" class="btn btn-primary  btn-block">傳送</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center text-white mt-3">@Cpoyrights 2020 xxx</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+
+  </div>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script>
+    $(function () {
+      console.log("ready");
+      var str = "";
+      $(".mycart-btn").click(function () {
+        var title = $(this).data("title");
+        var price = $(this).data("price");
+        console.log(title + "," + price);
+        str += '<tr class="cart-item">' +
+          '<td class="align-middle text-white">' +
+          '<p>單選</p>' +
+          '<input type="checkbox" class="j-check">' +
+          '</td>' +
+          '<td class="align-middle text-center">' +
+          '<img class="w-100" src="img/productaion png/cat_can.png" alt="">' +
+          '</td>' +
+          '<td class="align-middle text-center">' +
+          '<p class="text-white">'+title+'</p>' +
+          '</td>' +
+          '<td class="align-middle text-center text-white p-price">'+price+'</td>' +
+          '<td class="align-middle text-center word p-num">' +
+          '<div class="d-flex justify-content-center align-items-center">' +
+          '<button class="dec btn btn-outline-success">-</button>' +
+          '<input class=" itxt text-center" type="text" value="1">' +
+          '<button class="inc btn btn-outline-success">+</button>' +
+          '</div>' +
+          '</td>' +
+          '<td class="align-middle text-center word p-sum">'+price+'</td>' +
+          '<td class="align-middle text-center">' +
+          '<a class="more-a p-action" href="#" data-toggle="tooltip" data-placement="top"title="Delet?">X</a>' +
+          '</td>' +
+          '</tr>';
+          console.log(str);
+          localStorage.shopping = str;
+      });
+
+    });
+    
+  </script>
+</body>
+
+</html>

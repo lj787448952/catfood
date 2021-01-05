@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="background-gd">
+    <!-- header -->
+    <div class="container-fluid px-0">
+        <div class="container-fluid dark_black">
+            <nav class="container navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="index.html"><img src="./img/logo-cat-lightgreen.png" width="50%"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <li class="nav-item">
+                            <a class="nav-link text-white ml-2" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links text-white ml-2" href="about.html">關於公司</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links text-white ml-2" href="shop.html">商品商城</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-links text-white ml-2" href="contact.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                    <div class="ml-auto d-flex justify-content-center align-items-center">
+                        <a href="login.html" class="btn ml btn-outline-success text-white">登入</a>
+                        <a href="cart.html" class="btn ml btn-outline-success text-dark active">購物車<span class="text-dark badge badge-success" id="mycnt">0</span></a>
+                        <a href="checkout.html" class="btn ml btn-outline-success text-white">結帳</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+
+        <!-- Content -->
+        <section class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 word">
+                        <h2>購物車</h2>
+                        <div class="table-responsive-sm table-middle">
+                            <table class="table table-bordered table-middle table-hover">
+                                <thead class="table-success">
+                                    <tr class="text-center word">
+                                        <th scope="col" class="align-middle">
+                                            全選<br><input type="checkbox" class="checkall">
+                                        </th>
+                                        <th scope="col" class="align-middle">圖片</th>
+                                        <th scope="col" class="align-middle">名稱</th>
+                                        <th scope="col" class="align-middle">單價</th>
+                                        <th scope="col" class="align-middle">數量</th>
+                                        <th scope="col" class="align-middle">小計</th>
+                                        <th scope="col" class="align-middle">刪除</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                    <!-- <tr class="cart-item">
+                                        <td class="align-middle text-white">
+                                            <p>單選</p>
+                                            <input type="checkbox" class="j-check">
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <img class="w-100" src="img/productaion png/cat_can.png" alt="">
+                                        </td>
+                                        <td class="align-middle text-center  ">
+                                            <p class="text-white">貓奴必備</p>
+                                        </td>
+                                        <td class="align-middle text-center text-white p-price">500</td>
+                                        <td class="align-middle text-center word p-num">
+
+                                            <div class="d-flex justify-content-center align-items-center">
+                                                <button class="dec btn btn-outline-success">-</button>
+                                                <input class=" itxt text-center" type="text" value="1">
+                                                <button class="inc btn btn-outline-success">+</button>
+                                            </div>
+
+                                        </td>
+                                        <td class="align-middle text-center word p-sum">500</td>
+                                        <td class="align-middle text-center">
+                                            <a class="more-a p-action" href="#" data-toggle="tooltip" data-placement="top"
+                                                title="Delet?">X</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="cart-item">
+                                        <td class="align-middle text-white">
+                                            <p>單選</p>
+                                            <input type="checkbox" class="j-check">
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <img class="w-100" src="img/productaion png/Cat_tree.png" alt="">
+                                        </td>
+                                        <td class="align-middle text-center">
+                                            <p class="text-white">貓奴必備</p>
+                                        </td>
+                                        <td class="align-middle text-center text-white p-price ">500</td>
+                                        <td class="align-middle text-center p-num">
+                                            <div class="d-flex justify-content-center align-items-center">
+    
+                                                <button class="dec btn btn-outline-success">-</button>
+                                                <input class="text-center itxt" type="text" value="1">
+                                                <button class="inc btn btn-outline-success">+</button>
+    
+                                            </div>
+                                        </td>
+                                        <td class="align-middle text-center word p-sum">500</td>
+                                        <td class="align-middle text-center">
+                                            <a class="more-a p-action" href="#" data-toggle="tooltip" data-placement="top"
+                                                title="Delet?">X</a>
+                                        </td>
+                                    </tr> -->
+                                </tbody>
+                            </table>
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-6 text-center">已經選了<span class="amt">0</span>件商品</div>
+                                    <div class="col-md-6 text-center">總價:<span class="amt2">0</span>元</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="mt-5 d-none d-md-block word">毛寶貝喵說想要這些~</h2>
+                <div class="row mt-3">
+                    <div class="col-12 col-md-9 d-none d-md-block">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <!-- 卡片 -->
+                                <div class="card mycard border border-dark">
+                                    <img class="card-img-top" src="img/productaion png/Grooming＿brushpng.png"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">LTG-001</h4>
+                                        <p class="card-text">專利樣式</p>
+                                        <h6 class="">
+                                            NT$500
+                                        </h6>
+                                        <a href="checkProduct.html" class="btn btn-success btn-block">查看商品</a>
+                                        <a href="#" class="btn btn-success btn-block">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- 卡片 -->
+                                <div class="card mycard border border-dark">
+                                    <img class="card-img-top" src="img/productaion png/Cat_litter_box.png"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">LTG-001</h4>
+                                        <p class="card-text">專利樣式</p>
+                                        <h6 class="">
+                                            NT$500
+                                        </h6>
+                                        <a href="#" class="btn  btn-block btn-success">查看商品</a>
+                                        <a href="#" class="btn  btn-block btn-success">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- 卡片 -->
+                                <div class="card mycard border border-dark">
+                                    <img class="card-img-top" src="img/productaion png/Grooming＿brush.png"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">LTG-001</h4>
+                                        <p class="card-text">專利樣式</p>
+                                        <h6 class="">
+                                            NT$500
+                                        </h6>
+                                        <a href="#" class="btn btn-success btn-block">查看商品</a>
+                                        <a href="#" class="btn btn-success btn-block">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <!-- 卡片 -->
+                                <div class="card mycard border border-dark">
+                                    <img class="card-img-top" src="img/productaion png/Scratcher.png"
+                                        style="width:100%">
+                                    <div class="card-body">
+                                        <h4 class="card-title">LTG-001</h4>
+                                        <p class="card-text">專利樣式</p>
+                                        <h6 class="">
+                                            NT$500
+                                        </h6>
+                                        <a href="#" class="btn btn-success btn-block">查看商品</a>
+                                        <a href="#" class="btn btn-success btn-block">加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 word">
+                        <h2>購物車總計</h2>
+                        <div class="table-responsive-sm">
+                            <div class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>小計</td>
+                                        <td>NT1000</td>
+                                    </tr>
+                                </tbody>
+                            </div>
+                            <a href="checkout.html" class="btn  btn-success">前往結帳</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- footer -->
+        <div class="container-fluid dark_black mt-5">
+            <footer class="container px-0">
+                <div class="row text-white">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <ul class="footer-menu d-flex p-0 m-0">
+                            <li class="mr-4"><a class="text-white" href="index.html">首頁</a></li>
+                            <li class="mr-4"><a class="text-white" href="about.html">關於公司</a></li>
+                            <li class="mr-4"><a class="text-white" href="shop.html">商品商城</a></li>
+                            <li class="mr-4"><a class="text-white" href="contact.html">聯絡我們</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="px-0 mt-3">
+                            <h2 class="text-center">請留下Email，方便我們連繫尊貴的您</h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email"
+                                        name="email">
+                                </div>
+                                <button type="submit" class="btn  btn-block btn-success">傳送</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center text-white mt-3">@Cpoyrights 2020 xxx</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+    </div>
+    <script type="text/javascript" src="js/shopcart.js"></script>
+</body>
+
+</html>
